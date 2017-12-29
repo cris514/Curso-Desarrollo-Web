@@ -1,47 +1,67 @@
-/* tipo de selectores{
-  propiedad: valor;
-  propiedad-2: valor;
+/* * {
+  padding: 10px;//Margen interno
+  Usos del padding:
+  padding-top: 10px ;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  margin: 10px;//Margen Externo//
+   Usos del margin:
+  margin-top: 10px ;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  border: 2px solid red;//Tamaño, tipo, color
 } */
 
-/*Selector Universal*/
-*{
-  border: 1px solid red;
-  margin: 10px;
+
+body {
+  /* fuentes pendientes  */
+  margin: 0;/*Para que mi pagina completa no tenga bordes*/
+}
+.logotipo {
+  display: inline-block;
 }
 
-/* selector de etiquta */
-header{
-  background: blue;
+.menu {
+  font-size: 24px;
+  display: inline-block;
 }
 
-section{
-  background: purple;
+.menu li {
+   display: inline-block;/*Los elementos del menu, se ponen uno a lado del otro*/
 }
 
-
-/* selector descendente */
-article h3{
-  color: green;
+.titulo {
+  /* fuentes pendientes  */
+  font-size: 70px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+  line-height: 40px;
 }
 
-
-/* selectores de clases */
-.title-a{
-  background: yellow;
-}
-.title-b{
-  background: pink;
+.title-a {
+  font-size: 24px;
+  margin-top: 0;
 }
 
-/* selector por id */
-#header {
-  border: 3px solid red;
+.title-b {
+  font-size: 50px;
 }
-#guitarras{
-  border: 3px solid blue;
+
+.guitarras {
+  color: #1F313C; /*Todos los textos dentro de la clase .guitarras, eredaran este color.*/
 
 }
-#portada{
-  border: 3px solid yellow;
 
+.guitarras h2 {
+  font-size: 35px;/*Solo el elemento h2 dentro de guitarra, eredara esta propiedad.*/
+}
+
+.portada {
+background-image: url('../images/background.png');   /*El doble punto se utiliza para salir una carpeta. */
+color: white;/*Todos los textos dentro de la clase .portada, eredaran este color.*/
+padding: 20px;/*Margen Interno*/
 }
