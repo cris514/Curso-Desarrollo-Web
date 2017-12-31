@@ -1,3 +1,7 @@
+/* Tipografias
+font-family: 'Montserrat', sans-serif;
+font-family: 'Allerta', sans-serif; */
+
 /* * {
   padding: 10px;//Margen interno
   Usos del padding:
@@ -16,6 +20,10 @@
   border: 2px solid red;//Tamaño, tipo, color
 } */
 
+.contenedor {
+  width: 800px;
+  margin: auto;
+}
 
 body {
   /* fuentes pendientes  */
@@ -49,11 +57,12 @@ body {
 
 .title-b {
   font-size: 50px;
+  margin-bottom: 20px;
 }
 
 .guitarras {
   color: #1F313C; /*Todos los textos dentro de la clase .guitarras, eredaran este color.*/
-
+  font-family: 'Allerta', sans-serif;
 }
 
 .guitarras h2 {
@@ -64,4 +73,5 @@ body {
 background-image: url('../images/background.png');   /*El doble punto se utiliza para salir una carpeta. */
 color: white;/*Todos los textos dentro de la clase .portada, eredaran este color.*/
 padding: 20px;/*Margen Interno*/
+font-family: 'Allerta', sans-serif;
 }
