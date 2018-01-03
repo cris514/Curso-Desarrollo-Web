@@ -36,6 +36,7 @@ body {
 
 .logotipo {
   display: inline-block;
+  margin-left: 0;
 }
 
 .menu {
@@ -49,19 +50,36 @@ body {
    display: inline-block;/*Los elementos del menu, se ponen uno a lado del otro*/
 }
 
+.menu li:before {/*Pseudoelemento, * de lado izquierdo de los enlaces*/
+  content: '*';
+  font-size: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;/*Para quitar subrallado de links*/
+}
+
 .portada {
 background-image: url('../images/background.png');   /*El doble punto se utiliza para salir una carpeta. */
+background-size:cover;/*Permite a la imagen tomar toda la distribucion.*/
 color: white;/*Todos los textos dentro de la clase .portada, eredaran este color.*/
 padding: 20px;/*Margen Interno*/
 font-family: 'Allerta', sans-serif;
+height: 500px;
 }
 
-button {
-  border-radius: 5px;
+.button {
+  border-radius: 12px;/*Redodndeado del boton*/
   border: none;/*Sin borde*/
   background: #fd324e;/*Color boton*/
   color: white;/*letras*/
-  padding: 7px;/*Margen interior*/
+  padding: 7px 12px;/*Margen interior*/
+  cursor: pointer;/*Puntero cambia al pasarlo por el boton.*/
+  text-decoration: none;/*Quitar subrallado al enlace.*/
+  font-size: 18px;
+  background: linear-gradient(to left,#fe344e, #ff7250);/*Degradado de izquierda a derecha*/
 }
 
 .titulo {
@@ -70,6 +88,10 @@ button {
   margin-bottom: 15px;
   margin-top: 70px;
   line-height: 40px;
+}
+
+.titulo span {
+  text-decoration: underline;/*para subrallar invie.*/
 }
 
 .title-a {
@@ -126,6 +148,14 @@ button {
 
 .footer {
   background: #273b47;
+  font-family: 'Allerta', sans-serif;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .contacto img {
@@ -138,4 +168,66 @@ button {
 
 .contacto a {
   color: white;
+  margin: 10px 10px 10px 0;
 }
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  color: white;
+  padding: 50px 10px;
+}
+
+.col1 , .col2 {/*la coma es para poner las mismas propiedades a esas os columnas*/
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+  }
+
+.col2 {
+  align-items: flex-start;
+
+}
+
+  .intereses label {
+    font-size: 12px;
+  }
+
+  .formulario label, .sexo, .intereses {
+    margin-bottom: 10px;
+  }
+
+  .sexo{
+    margin-top: 10px;
+  }
+
+  table {
+    width: 100%;/*Ancho */
+  }
+
+  th {
+    background: #273b47;/*Color para el fondo de los titulos.*/
+    color: white;
+  }
+
+  th {
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+  td {
+    padding: 20px;
+  }
+
+  table, td, th { /*Bordes para la tabla*/
+    border: 1px solid  #273b47;
+    border-collapse: collapse; /*para dejar una unica division.*/
+  }
