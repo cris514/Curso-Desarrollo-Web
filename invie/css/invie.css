@@ -67,7 +67,7 @@ background-size:cover;/*Permite a la imagen tomar toda la distribucion.*/
 color: white;/*Todos los textos dentro de la clase .portada, eredaran este color.*/
 padding: 20px;/*Margen Interno*/
 font-family: 'Allerta', sans-serif;
-height: 500px;
+height: 500px;/*Tamaño de la imagen*/
 }
 
 .button {
@@ -133,7 +133,7 @@ height: 500px;
 .izquierda{
   float: left;
   position: relative;
-  top: 80px;
+  
 }
 
 .contenedor-guitarra-a {
@@ -144,6 +144,8 @@ height: 500px;
 .contenedor-guitarra-b {
   margin-left: 370px;
   padding-left:
+  position: relative;
+  bottom: 90px;
 }
 
 .footer {
