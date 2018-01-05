@@ -1,3 +1,6 @@
+/*Pagina para deradado de bottones,
+colorizilla.com*/
+
 /* Tipografias
 font-family: 'Montserrat', sans-serif;
 font-family: 'Allerta', sans-serif; */
@@ -19,10 +22,14 @@ font-family: 'Allerta', sans-serif; */
 
   border: 2px solid red;//Tamaño, tipo, color
 } */
-
+.background {/*Clase utilitaria*/
+  background-image: url('../images/background.png');   /*El doble punto se utiliza para salir una carpeta. */
+  background-size:cover;/*Permite a la imagen tomar toda la distribucion.*/
+}
 .contenedor {
   width: 800px;
   margin: auto;
+  position: relative;
 }
 
 body {
@@ -62,8 +69,7 @@ body {
 }
 
 .portada {
-background-image: url('../images/background.png');   /*El doble punto se utiliza para salir una carpeta. */
-background-size:cover;/*Permite a la imagen tomar toda la distribucion.*/
+
 color: white;/*Todos los textos dentro de la clase .portada, eredaran este color.*/
 padding: 20px;/*Margen Interno*/
 font-family: 'Allerta', sans-serif;
@@ -107,6 +113,7 @@ height: 500px;/*Tamaño de la imagen*/
 .guitarras {
   color: #1F313C; /*Todos los textos dentro de la clase .guitarras, eredaran este color.*/
   font-family: 'Allerta', sans-serif;
+  margin-bottom: 60px !important;/*Marguen Inferior*/
 }
 
 .guitarras h2 {
@@ -114,7 +121,7 @@ height: 500px;/*Tamaño de la imagen*/
 }
 
 .guitarra {
-  margin: 20px;
+  margin: 10px 10px 30px 10px;
   padding: 10px;
   border: 1px solid #1F313C;
   border-radius: 8px;/* redondear bordes de margenes */
@@ -122,6 +129,12 @@ height: 500px;/*Tamaño de la imagen*/
 
 .guitarra ol {
   padding: 0;
+}
+
+.guitarra.b {
+    height: 190px;/*Alto*/
+
+
 }
 
 .derecha {
@@ -133,7 +146,7 @@ height: 500px;/*Tamaño de la imagen*/
 .izquierda{
   float: left;
   position: relative;
-  
+
 }
 
 .contenedor-guitarra-a {
@@ -143,13 +156,13 @@ height: 500px;/*Tamaño de la imagen*/
 
 .contenedor-guitarra-b {
   margin-left: 370px;
-  padding-left:
   position: relative;
   bottom: 90px;
 }
 
 .footer {
   background: #273b47;
+  padding: 50px 10px;
   font-family: 'Allerta', sans-serif;
 }
 
@@ -171,6 +184,7 @@ height: 500px;/*Tamaño de la imagen*/
 .contacto a {
   color: white;
   margin: 10px 10px 10px 0;
+  height: 200px;
 }
 
 .footer .contenedor {
@@ -182,12 +196,14 @@ height: 500px;/*Tamaño de la imagen*/
   display: flex;
   width: 400px;
   color: white;
-  padding: 50px 10px;
+
+
 }
 
 .col1 , .col2 {/*la coma es para poner las mismas propiedades a esas os columnas*/
   display: flex;
   flex-direction: column;
+
 }
 
 .col1 {
@@ -196,7 +212,10 @@ height: 500px;/*Tamaño de la imagen*/
 
 .col2 {
   align-items: flex-start;
+}
 
+.col2 .button {
+  margin-top: 15px;
 }
 
   .intereses label {
@@ -213,6 +232,7 @@ height: 500px;/*Tamaño de la imagen*/
 
   table {
     width: 100%;/*Ancho */
+
   }
 
   th {
@@ -232,4 +252,16 @@ height: 500px;/*Tamaño de la imagen*/
   table, td, th { /*Bordes para la tabla*/
     border: 1px solid  #273b47;
     border-collapse: collapse; /*para dejar una unica division.*/
+  }
+
+  input, textarea {
+    outline: 0;
+  }
+
+  input:focus, textarea:focus { /*Seudo clases, para dar color dentro de casillas de nombre y emailtext-decoration: none*/
+    background: lightgray;
+  }
+
+  .tabla {
+    margin: 50px 0;
   }
